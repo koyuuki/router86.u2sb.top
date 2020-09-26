@@ -23,7 +23,7 @@ steps:
       sudo timedatectl set-timezone Asia/Shanghai
       npm install pnpm -g
       pnpm install
-      pnpm run build
+      pnpm run docs:build
       cd dist
       touch .nojekyll
       git config --global user.email "$(EMAIL)"

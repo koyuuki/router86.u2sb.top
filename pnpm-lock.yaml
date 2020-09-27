@@ -10,6 +10,7 @@ devDependencies:
   vuepress-plugin-pangu: 1.0.1
   vuepress-plugin-sitemap: 2.3.1
   vuepress-plugin-thirdparty-search: 1.0.2
+  vuepress-plugin-zooming: 1.1.8
   vuepress-theme-vdoing: 1.4.4
 lockfileVersion: 5.1
 packages:
@@ -7976,6 +7977,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-qXAzHCsbe7fKdqZyI7cax6qtVZpqbW5TEp+NOwCzgN6IIrHc8vOkz+shCTvc+qzDgqE31+geT1lPFFX6LvbOFQ==
+  /vuepress-plugin-zooming/1.1.8:
+    dependencies:
+      zooming: 2.1.1
+    dev: true
+    resolution:
+      integrity: sha512-QAspMEqzerd0n8z/oOL5a67V/QaFZyjSwfo86y6PWhDdVAeOLR7umJ7syQqJpMdN9EVxmAstuzbKHkRxWzL0NQ==
   /vuepress-theme-vdoing/1.4.4:
     dependencies:
       '@better-scroll/core': 2.0.3
@@ -8345,6 +8352,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-4Se9nmb9hGvl6rSME5SIL3wOT5g=
+  /zooming/2.1.1:
+    dev: true
+    resolution:
+      integrity: sha512-Z38dkZRQsFNBE67+xDBQLNKMs5J1Gc+s3/zO6iezTrC24VYLJV7YPBdBDJmiLhff5qa6Awxv4wsjqx3oYz2MYA==
 specifiers:
   markdown-it-attrs: ^3.0.1
   markdown-it-footnote: ^3.0.2
@@ -8357,4 +8368,5 @@ specifiers:
   vuepress-plugin-pangu: ^1.0.1
   vuepress-plugin-sitemap: ^2.3.1
   vuepress-plugin-thirdparty-search: ^1.0.2
+  vuepress-plugin-zooming: ^1.1.8
   vuepress-theme-vdoing: ^1.4.4

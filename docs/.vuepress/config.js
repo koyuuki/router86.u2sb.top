@@ -44,10 +44,11 @@ module.exports = {
     // ],
     // contentBgStyle: 1, // 文章内容块的背景风格，默认无。 1 => 方格 | 2 => 横线 | 3 => 竖线 | 4 => 左斜线 | 5 => 右斜线 | 6 => 点状
     sidebarOpen: true, // 初始状态是否打开侧边栏，默认true
-    // updateBar: { // 最近更新栏
-    // showToArticle: true, // 显示到文章页底部，默认true
-    // moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
-    // },
+    updateBar: {
+      // 最近更新栏
+      showToArticle: false, // 显示到文章页底部，默认true
+      moreArticle: "/archives", // “更多文章”跳转的页面，默认'/archives'
+    },
     pageButton: true, // 是否显示快捷翻页按钮，默认true
 
     sidebar: "structuring", // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
@@ -116,13 +117,33 @@ module.exports = {
   plugins: [
     ["sitemap", { hostname: "https://router86.u2sb.top" }],
     ["vuepress-plugin-pangu"],
-    ["one-click-copy"],
+    [
+      "one-click-copy",
+      {
+        copySelector: [
+          'div[class*="language-"] pre',
+          'div[class*="aside-code"] aside',
+        ],
+        copyMessage: "复制成功",
+        duration: 1000,
+        showInMobile: false,
+      },
+    ],
+    [
+      "vuepress-plugin-zooming", // 放大图片
+      {
+        selector: ".theme-vdoing-content img:not(.no-zoom)", // 排除class是no-zoom的图片
+        options: {
+          bgColor: "rgba(0,0,0,0.6)",
+        },
+      },
+    ],
     [
       "thirdparty-search",
       {
         searchMaxSuggestions: 10,
         thirdparty: [],
       },
-    ],
+    ]
   ],
 };

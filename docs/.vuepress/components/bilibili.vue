@@ -1,8 +1,7 @@
 <template>
-  <div class="bilibili">
+  <div>
     <iframe
       class="bbplayer"
-      :id="bbid"
       :src="src"
       allowfullscreen="allowfullscreen"
       scrolling="no"
@@ -10,10 +9,15 @@
       sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"
     ></iframe>
     <script>
-        document.getElementById("{{bbid}}").style.height=document.getElementById("{{bbid}}").scrollWidth*0.76+"px";
-        window.onresize = function(){
-            document.getElementById("{{bbid}}").style.height=document.getElementById("{{bbid}}").scrollWidth*0.76+"px";
-        };
+      var bbplayers = document.getElementsByClassName("bbplayer");
+      bbplayers.forEach(function (item, index, arr) {
+        item.style.height = item.scrollWidth * 0.76 + "px";
+      });
+      window.onresize = function () {
+        bbplayers.forEach(function (item, index, arr) {
+          item.style.height = item.scrollWidth * 0.76 + "px";
+        });
+      };
     </script>
   </div>
 </template>
@@ -47,8 +51,7 @@ export default {
       src: `//player.bilibili.com/player.html?bvid=${this.bvid}&page=${
         this.page
       }&high_quality=${this.highQuality ? 1 : 0}&danmaku=${this.danmaku}`,
-      bbid: `bbid-${Math.round(Math.random()*100000)}`,
-    };
+    }
   },
 };
 </script>

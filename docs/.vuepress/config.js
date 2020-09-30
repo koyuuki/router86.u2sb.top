@@ -99,7 +99,7 @@ module.exports = {
       // 页脚信息
       createYear: 2020, // 博客创建年份
       copyrightInfo:
-        "MonoLogueChi | <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' rel='external nofollow' target='_blank'>CC BY-NC-SA 4.0</a>", // 博客版权信息，支持a标签
+        "<a href='https://blog.xxwhite.com' target='_blank'>MonoLogueChi</a> | <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' rel='external nofollow' target='_blank'>CC BY-NC-SA 4.0</a>", // 博客版权信息，支持a标签
     },
   },
   markdown: {

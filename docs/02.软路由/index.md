@@ -1,7 +1,7 @@
 ---
-pageComponent: 
+pageComponent:
   name: Catalogue
-  data: 
+  data:
     key: 02.软路由
     imgUrl: /img/tou.png
     description: 软路由相关知识
@@ -13,3 +13,7 @@ article: false
 comment: false
 editLink: false
 ---
+
+:::tip
+这一部分主要是介绍 OpenWRT 系统，想其他系统的的朋友可以绕路了。
+:::

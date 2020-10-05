@@ -12,6 +12,9 @@ features: # 可选的
     details: OMV系统相关内容
     link: /nas/ # 可选
     # imgUrl: /img/web.png # 可选
+  - title: 
+    details: 
+    link: 
   - title: 软路由
     details: OpenWrt系统相关内容
     link: /router86/
@@ -20,7 +23,13 @@ features: # 可选的
     details: 硬件相关内容
     link: /hardware/
     # imgUrl: /img/other.png
-
+  - title: 
+    details: 
+    link: 
+  - title: Linux
+    details: Linux相关内容
+    link: /linux/
+    # imgUrl: /img/other.png
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 postList: none
 ---

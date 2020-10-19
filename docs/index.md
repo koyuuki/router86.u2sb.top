@@ -19,8 +19,8 @@ features: # 可选的
     details: OpenWrt系统相关内容
     link: /router86/
     # imgUrl: /img/ui.png
-  - title: 硬件
-    details: 硬件相关内容
+  - title: 装机
+    details: 硬件装机相关内容
     link: /hardware/
     # imgUrl: /img/other.png
   - title: 
@@ -36,6 +36,10 @@ postList: none
 
 ## 关于
 
-本站是个人随手写下的一些知识记录
+本站是个人随手写下的一些知识记录。
 
-我更希望这个网站发展成 WiKi 的形式，而不是一堆教程
+希望这些知识能给新入门的朋友们带来一些帮助。
+
+我更希望这个网站发展成 WiKi 的形式，而不是一堆教程。
+
+我也希望大家能一起来完善这个网站。

@@ -2,10 +2,10 @@
 pageComponent: 
   name: Catalogue
   data: 
-    key: 03.硬件
+    key: 03.装机
     imgUrl: /img/tou.png
     description: 硬件相关知识
-title: 硬件
+title: 装机
 date: 2020-09-27 21:50:53
 permalink: /hardware/
 sidebar: true
